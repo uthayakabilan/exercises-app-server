@@ -33,7 +33,10 @@ export const sessionOptions = {
 };
 
 export const corsOptions = {
-  origin: ["http://192.168.68.103", process.env.EXERCISES_APP_CLIENT_ADDRESS],
+  origin: [
+    "https://exercises-app-client.onrender.com/",
+    process.env.EXERCISES_APP_CLIENT_ADDRESS,
+  ],
   // origin: "*",
   methods: ["POST", "PUT", "GET", "OPTIONS", "HEAD"],
   credentials: true,
